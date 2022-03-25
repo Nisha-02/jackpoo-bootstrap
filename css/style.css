@@ -1,0 +1,850 @@
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,400;0,600;0,800;0,900;1,200;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@300;500&display=swap');
+
+  *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "oswald",sans-serif;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+.cl{
+	    background: #c30ff3;
+}
+.nav-top li{
+	justify-content: space-between;
+	display: flex;
+	padding: 0 30px;
+	color: white;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+	color: white;
+font-weight: 600;
+font-size: 17px;
+text-transform: uppercase;
+padding: 0 15px;
+
+}
+.nav-top ul{
+	border-bottom: 1px solid #636e72;
+	padding: 10px 0;
+
+}
+.nav-top li i{
+	color: white;
+	font-size: 20px;
+	padding: 0 13px;
+}
+/* .navbar-nav .nav-item .nav-link{
+	border-left: 1px solid #636e72 ;
+	transform: rotate(5deg);
+
+}*/
+.btn-sign{
+	    background: #c30ff3;
+	    color: white;
+	    text-transform: uppercase;
+	    align-items: center;
+display: flex;
+padding: 15px 10px;
+font-weight: bold;
+}
+.btn-login{
+	   color: #c30ff3;
+text-transform: uppercase;
+align-items: center;
+display: flex;
+padding: 15px 10px;
+font-weight: bold;
+}
+.btn-login i {
+	   color: #c30ff3;
+	   font-size: 25px;
+
+	 
+}
+.btn-sign i{
+	    color: white;
+	   font-size:25px;
+
+}
+.btn-login:hover{
+	color :#c30ff3;
+}
+.btn-sign:hover{
+	color :#fff;
+}
+.btn-login{
+	   border-bottom: 2px solid #c30ff3;
+
+}
+.btn-sign{
+	   border-bottom: 2px solid white;
+	   	   border-right: 2px solid white;
+
+}
+.navbar-brand{
+	margin-top: -100px;
+}
+.dropdown-menu {
+	padding: 0;
+}
+.dropdown-item{
+	border-bottom: 1px solid #efc0f1;
+	padding: 10px 30px;
+}
+.dropdown-item:hover{
+	background-color:#c30ff3 ;
+	color: white;
+	font-weight: 600;
+}
+.fixbg{
+	background-color:#c30ff3 ;
+	color: white;	
+	border-bottom: 1px solid white;
+}
+.add:hover{
+opacity: 0;
+}
+.sub:hover{
+	opacity: 100%;
+	color: #fff;
+	display:block;
+}
+.sub{
+opacity: 0;	
+}
+
+/*.header*/
+
+.header{
+	background-image: url(..//image/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	color: white;
+
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 220px;
+}
+.header h4{
+font-size: 36px;
+}
+.header h1{
+font-size: 75px;
+font-weight: 900;
+}
+.header p{
+font-size: 19px;
+line-height: 30px;
+margin-top: 10px;
+}
+.btn-join {
+	         color:#c30ff3; ;
+	         font-weight: bold;
+	         font-size: 20px;
+          display: flex;
+          align-items: center;
+          border-bottom:5px solid  #efc0f1;
+	 border-right:5px solid  #efc0f1 ;
+	 background-color: white;
+}
+.btn-join i {
+	   color: #c30ff3;
+	   font-size: 25px;
+        padding-top: 5px;
+
+	
+	 outline: none;
+}
+.btn-join:hover{
+  background-color:#c30ff3;
+	color: #fff;
+	   }
+
+/*welcome*/
+
+.welcome{
+	padding: 80px;
+	background-color: black;
+}
+.welcome h1 {
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 45px;
+
+
+}
+.welcome p{
+	margin-top: 20px;
+	line-height: 30px;
+}
+.welcome h3{
+	font-weight: bold;
+	margin-top: 20px;
+}
+.welcome h3:hover{
+	color:#c30ff3 ;
+	transition: all 0.2s ease-in-out;
+}
+.welcome-text{
+	padding: 20px;
+	border-radius: 15px;
+
+}
+.trans:hover{
+	  transform: translateY(10px);
+	  transition: 1s;
+}
+
+.casino{
+	padding: 60px;
+	
+}
+.casino h1{
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+
+}
+.casino p{
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 55px;
+}
+
+.casino-info h3{
+background-color:#c30ff3;
+color: white;
+font-weight: 600;
+font-size: 18px;
+	padding: 15px 29px;
+			border-bottom: 4px solid #efc0f1;	
+
+}
+
+.casino-info h4{
+background-color:#fff;
+color: #c30ff3;;
+font-weight: 600;
+	padding: 15px 35px;
+	font-size: 19px;
+		border-bottom: 4px solid #efc0f1;	
+}
+.casino-info i{
+	background-color: #c30ff3 ;
+	color: white;
+	border-radius: 50%;
+}
+
+.jackpot-info h5{
+
+color: #fff;
+
+	
+		
+	}
+.jackpot-info{
+	background-color:  #080e37;
+	padding: 15px;
+	border-bottom: 2px solid;
+	justify-content: space-around;
+
+}
+.casino{
+	background-image: url("..//image/jaqport-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 170vh;
+  width: 100%;
+}
+
+.space h3{
+background-color:#c30ff3;
+color: white;
+font-weight: 600;
+padding: 10px 245px 10px 10px;
+			border-bottom: 4px solid #efc0f1;	
+
+}
+
+.space h4{
+background-color:#fff;
+color: #c30ff3;;
+font-weight: 600;
+padding: 10px 10px 10px 10px;
+		border-bottom: 4px solid #efc0f1;	
+}
+.space-img img{
+	border-radius: 7px;
+	width: 100%;
+	
+
+}
+.space-img{
+	position: relative;
+}
+.overlap{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	align-items: center;
+	display: flex;
+text-align: center;
+	justify-content: center;
+	color: white;
+	top: 20px;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	transform: scale(0);
+}
+.space-img:hover{
+		transform: translateY(10px);
+	transition: 1s;
+}
+.space-img:hover .overlap{
+	transition: 0.4s ease;
+
+	transform: scale(100%);
+}
+
+
+.control h1,.tablet h1{
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+
+}
+.control p{
+	color: white;
+	font-weight: 400;
+	font-size: 18px;
+	
+}
+.control{
+	padding: 60px;
+background-color: black;
+  height: 120vh;
+  width: 100%;
+}
+.control-info h4{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.control-detail{
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.control-info h4:hover{
+color: #c30ff3; ;
+}
+
+.control-detail:hover{
+	transform: translateY(10px);
+	transition: 1s;
+}
+
+.wrapper img{
+	width: 100%;
+}
+.wrapper{
+	position: relative;
+
+}
+.wrapper-text{
+	position: absolute;
+color: white;
+    height: auto;
+    width: 96%;
+    background-color: rgba(195, 15, 243, 0.8);
+    padding: 15px 30px;
+    bottom: 0;
+    top: auto;
+    transform: scale(0);
+
+}
+
+.wrapper:hover .wrapper-text{
+	transform: scale(100%);
+	transition:all 0.2s ease-in-out;
+}
+.wrapper:hover{
+	transform: translateY(10px);
+	transition: 0.5s ;
+}
+
+.tablet{
+	background-image: url("..//image/jaqport-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  /*height: 170vh;*/
+  width: 100%;
+padding: 60px;
+}
+.nav-pills .nav-link.active{
+ background-color: rgba(195, 15, 243, 0.8);
+
+}
+.tablet .nav-pills .nav-item .nav-link{
+	color: white;
+
+	font-weight: bold;
+}
+.wrapper-tabs{
+	padding:0 0 110px 0;
+}
+
+/*question*/
+
+
+.question{
+	padding: 60px;
+background-color:#080e37;
+     
+
+	
+}
+.question h1{
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+
+}
+.question h3{
+	font-size: 20px;
+}
+.question p{
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 55px;
+}
+
+.accordion-button:focus ,.newsletter input:focus,.content input:focus{
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button.collapsed {
+    color: white;
+    /*background: blue;*/
+}
+
+
+/*joker*/
+.joker{
+	padding: 50px 0;
+	background-image: url("..//image/jokebg.jpg");
+	 background-size: cover;
+  background-position: center;
+ 
+  width: 100%;
+}
+.joker h1{
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+
+}
+.joker p{
+	color: white;
+	
+	font-size: 20px;
+	margin-bottom: 55px;
+}
+.joker img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+        vertical-align: middle;
+  }
+
+.joker .space{
+	padding: 70px;
+}
+
+/*reviews*/
+
+.reviews{
+	padding: 60px;
+background-color: black;
+color: white;
+ 
+  width: 100%;
+}
+.reviews h1{
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 45px;
+  color: white;
+
+}
+.reviews p{
+	color: white;
+	
+	font-size: 20px;
+
+}
+
+.reviews img{
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.reviews i{
+background-color: rgba(195, 15, 243, 0.8);
+padding: 8px ;
+font-weight: bold;
+margin-right: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.reviews span{
+	color:#c30ff3; ;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.reviews .gray:hover{
+	transform: translateY(10px);
+	transition: 1s;
+}
+
+
+/*newsletter*/
+
+.newsletter{
+	background-color:#c30ff3;
+color: white;
+padding: 40px;
+}
+.newsletter h1{
+	font-weight: bold;
+	font-size: 35px;
+
+}
+.newsletter .btn{
+	background-color: #c30ff3;
+	color: white;
+	border: 5px solid #fff;
+	outline: none;
+	font-weight: 600;
+}
+.newsletter i{
+	/*color: rgba(195, 15, 243, 0.8);*/
+}
+
+/*foooter*/
+
+.footer{
+		padding-top: 60px;
+		padding-bottom: 30px;
+	background-image: url("..//image/bg (2).jpg");
+	 background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+
+}
+.footer i{
+	color:  #c30ff3;;
+}
+.footer .soci img{
+	margin-right: 10px;
+}
+
+.footer img:hover{
+transform: scale(0.9);
+    transition: 0.3s all linear;
+
+}
+.footer .end{
+	font-size: 17px;
+	margin-top: 25px;
+}
+.copyright .chev{
+	width: 40px;
+	font-weight: bold;
+	margin:  10px 70px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: #c30ff3;
+    font-size: 1.5rem;
+z-index: 2;
+    transition: 0.3s all linear;
+}
+
+.footer{
+
+}
+.offi{
+    /*display: block;*/
+    border: 0px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+
+    margin-right: 70px;
+    /*margin-top: -170px;*/
+    margin-bottom: 60px;
+/*z-index: 1;*/
+}
+
+.content{
+	margin: 0 30px;
+}
+.content i{
+	font-size: 35px;
+	/*margin-bottom: 30px;*/
+	margin-top: -65px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 27px;
+}
+
+.live-chat{
+	align-items: flex-end;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	/*margin-top: 40px;*/
+}
+
+@media(max-width: 768px){
+	.nab-1{
+		display: none;
+	}
+
+ .nab-2 {
+
+padding: 65px 15px;
+
+}
+.nab-2 img{
+
+
+   width: 180%;
+	margin-top: 80px;
+	align-items: center;
+
+}
+
+	.navbar .navbar-nav .nav-item .nav-link{
+	color: white;
+font-weight: 600;
+font-size: 40px;
+border-bottom: 2px solid gray;
+padding: 30px 15px;
+
+}
+
+.dropdown-item{
+	/*background-color:black ;*/
+	color: white;
+	font-size: 30px;
+ background-color: #212529;
+
+	font-weight: 600;
+}
+.dropdown .dropdown-menu{
+	border: none;
+}
+.dropdown-menu.dropdown-item{
+/*border-bottom: 2px solid gray;*/
+border-bottom: none;
+}
+.dropdown-item{
+	border-bottom: 1px solid #efc0f1;
+	padding: 10px 30px;
+}
+.btn-sign{
+	    background: #c30ff3;
+	    color: white;
+	    text-transform: uppercase;
+	    align-items: center;
+display: flex;
+padding: 25px 30px;
+margin-top: 30px;
+font-size: 40px;
+font-weight: bold;
+}
+
+.btn-login{
+	   color: #c30ff3;
+text-transform: uppercase;
+align-items: center;
+display: flex;
+padding: 25px 30px;
+font-weight: bold;
+margin-top: 30px;
+font-size: 40px;
+}
+
+.casino{
+	background-image: url("..//image/jaqport-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 250vh;
+  width: 100%;
+}
+.space{
+	margin-top: 40px;
+}
+.space h3{
+font-size: 20px;
+
+}
+.space h4{
+
+font-size: 20px;
+}
+.casino-info h3,.casino-info h4{
+	font-size: 40px;
+}
+.reverse{
+	flex-direction: column-reverse;
+}
+.question h3{
+	font-size: 27px;
+}
+.question p{
+	font-size: 22px;
+}
+.joker p{
+	font-size: 22px;
+}
+.joker h1{
+	font-size: 45px;
+}
+.gray h4{
+	font-size: 26px;
+}
+.gray p{
+	font-size: 27px;
+}
+.reviews p{
+	font-size: 18px;
+}
+.news-h1 h1{
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.news-input{
+		margin: auto;
+	text-align: center;
+	justify-content: center;
+
+}
+
+}
+
+
+
+@media(min-width: 992px){
+.casino{
+	background-image: url("..//image/jaqport-bg.jpg");
+  background-size: cover;
+  background-position: center;
+/*  height: 90vh;
+  width: 100%;*/
+
+
+}
+.control{
+/*	padding: 40px 10px;
+	height: 60vh;*/
+background-color: black;
+ 
+}
+.control-detail{
+	padding: 25px 10px;
+	border-radius: 10px;
+}
+.question img{
+	margin-top: 80px;
+}
+.reviews{
+	padding: 60px 20px;
+background-color: black;
+color: white;
+ 
+  width: 100%;
+}
+.reviews h1{
+  text-shadow: 2px 2px #c30ff3;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 75px;
+  color: white;
+
+}
+.reviews p{
+	color: white;
+	
+	font-size: 20px;
+
+}
+
+
+
+.reviews .gray:hover{
+	transform: translateY(10px);
+	transition: 1s;
+}
+.news-h1 h1{
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.news-input{
+		margin: auto;
+	text-align: center;
+	justify-content: center;
+
+}
+.welcome{
+	padding: 60px 20px;
+	background-color: black;
+}
+.tablet{
+	padding: 60px 5px;
+}
+
+.question{
+	padding: 60px 10px;
+}
+}
+

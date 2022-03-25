@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+
+
+
+    <style>
+/* Center the loader */
+#loader {
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #080e37;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 2s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+
+
+}
+</style>
+
+
+
+  </head>
+  <body onload="myFunction()" style="margin:0;" class="cl" >
+   <div id="loader"></div>
+   <!-- navbar -->
+<header style="display:none;" id="myDiv" class="animate-bottom">
+   <section class="navbar nab-1 bg-dark  ">
+    <div class="container">
+      <div class="row ms-auto nav-top  ">
+        <ul class=" d-flex ">
+          <li><i class='bx bx-phone-call'></i> +800-123-4567 6587</li>
+              <li><i class='bx bx-map' ></i>  Beverley, New York 224 USA</li>
+     <li>
+      <i class='bx bxl-twitter' ></i>
+<i class='bx bx-wifi' ></i>
+<i class='bx bxl-facebook' ></i>
+<i class='bx bxl-google-plus' ></i>
+<i class='bx bxl-stripe' ></i>
+     </li>
+        </ul>
+      </div>
+    </div>
+
+   </section>
+   <nav class="navbar navbar-expand-lg nab-2 navbar-dark bg-dark ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="image/logo.png"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pb-4" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+       <li class="nav-item dropdown">
+          <a class="nav-link active " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       home<i class='bx bx-plus add ' ></i><i class='bx bx-minus text-white sub' ></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item fixbg" href="#">Home Page One</a></li>
+            <li><a class="dropdown-item" href="#">Home Page Two</a></li>
+           
+          </ul>
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+       features
+          </a>
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">ABOUT</a></li>
+            <li><a class="dropdown-item" href="#">CASINO JACKPOT</a></li>
+            <li><a class="dropdown-item" href="#">GAMES</a></li>
+              <li><a class="dropdown-item" href="#">PARTNERS</a></li>
+
+  <li><a class="dropdown-item" href="#">PRICING PLAN</a></li>
+
+  <li><a class="dropdown-item" href="#">ACCOUNTS </a></li>
+
+  <li><a class="dropdown-item" href="#">SHOP </a></li>
+
+  <li><a class="dropdown-item" href="#">404 PAGE </a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">tournament</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         blog
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item " href="#">BLOG</a></li>
+            <li><a class="dropdown-item" href="#">BLOG 2</a></li>
+            <li><a class="dropdown-item" href="#">BLOG SINGLE</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">contact</a>
+        </li>
+      </ul>
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+  <button type="button" class="btn btn-login bg-white"><i class='bx bxs-user' ></i>login</button>
+  <button type="button" class="btn btn-sign"><i class='bx bxs-user-plus' ></i>signup</button>
+
+</div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="header">
+  <div class="container">
+    <div class="row text-white center"  >
+  <h4>THE BEST WEBSITE</h4>
+  <h1>ONLINE CASINO</h1>
+  <h4>GENUINE MONEY TRANSACTION</h4>
+  <p>Assertively Communicate An Expanded Array Of Mindshare Rather<br> Than Diverse Technologies For Magnetic Applications Eamlessly <br>Virtual Then Conveniently Monetize Synergistic Human Capital</p>
+
+  </div>
+    <button type="button" class="btn  btn-join  text-start" >Join Us Today <i class='bx bxl-youtube'></i></button>
+  </div>
+</section>
+
+<!-- welcome -->
+<section class="welcome text-center  text-white">
+  <div class="container">
+    <div class="row">
+      <h1>WELCOME TO CASINO</h1>
+    </div>
+    <div class="row py-4  g-4 justify-content-center "  >
+      <div class="col-lg-4 col-sm-6 col-12 trans">
+        <div class="welcome-text bg-dark">
+        <img src="image/01.png">
+        <h3>ADVICE AND GUIDE</h3>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound </p>
+      </div>
+      </div>
+
+           <div class="col-lg-4 col-sm-6 col-12 trans">
+        <div class="welcome-text bg-dark">
+        <img src="image/02.png">
+        <h3>GREAT SOLUTIONS</h3>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound </p>
+      </div>
+      </div>
+
+        <div class="col-lg-4 col-sm-6 col-12 trans">
+        <div class="welcome-text bg-dark">
+        <img src="image/03.png">
+        <h3>SUPPORT IN PERSON</h3>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- casino -->
+<section class="casino ">
+  <div class="container">
+    <div class="row text-center">
+    <h1> CASINO JACKPOTS</h1> 
+<p>At Modeltheme, we show only the best websites and portfolios built completely with <br>passion, simplicity and creativity !.</p>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-4 col-12">
+
+
+    <div class="row ">
+  
+       <div class="d-flex casino-info">
+         <h3 >TOP WINNERS LIST</h3>
+         <h4>VIEW ALL <i class='bx bx-chevron-right'></i></h4>
+       </div>
+
+    </div>
+      
+    
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+      
+      </div>
+
+       
+       
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+       
+       
+      </div>
+
+       
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+      
+      </div>
+
+    
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+      
+      </div>  
+    
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+    
+      </div>
+
+  
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+       
+      </div>
+
+         
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+       
+      </div>
+
+      
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+        
+    
+      </div>  
+      
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+      
+      </div> 
+
+          <div class="d-flex jackpot-info">
+          <h5>1.Christopher</h5>
+          <img src="image/001.png">
+          <h5 class="fw-bold">$2365.96</h5>
+     
+      </div>
+
+</div>
+
+
+      <div class="col-lg-8 col-12">
+       
+       <div class="d-flex space">
+         <h3 class=""> RUNNING JACKPOTS</h3>
+         <h4>BROWSE ALL GAMES <i class='bx bx-chevron-right'></i></h4>
+       </div>
+
+       <div class="row g-4 justify-content-center mt-1">
+         <div class="col-lg-4 col-sm-6 col-12 space-img">
+           <img src="image/01 (1).jpg" class="img-fluid">
+           <div class="overlap">
+            <div>
+             <h4 class="fw-bold">POKER GAMES</h4>
+             <h5 class="pb-3">$2365.96</h5>
+              <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+           </div>
+         </div>
+
+           <div class="col-lg-4 col-sm-6 col-12  space-img">
+           <img src="image/02 (1).jpg" class="img-fluid">
+           <div class="overlap">
+            <div>
+             <h4 class="fw-bold">POKER GAMES</h4>
+             <h5 class="pb-3">$2365.96</h5>
+              <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+           </div>
+         </div>
+
+           <div class="col-lg-4 col-sm-6 col-12  space-img">
+           <img src="image/03 (1).jpg" class="img-fluid">
+           <div class="overlap">
+            <div>
+             <h4 class="fw-bold">POKER GAMES</h4>
+             <h5 class="pb-3">$2365.96</h5>
+              <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+           </div>
+         </div>
+
+           <div class="col-lg-4 col-sm-6 col-12  space-img">
+           <img src="image/04 (1).jpg" class="img-fluid">
+           <div class="overlap">
+            <div>
+             <h4 class="fw-bold">POKER GAMES</h4>
+             <h5 class="pb-3">$2365.96</h5>
+              <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+           </div>
+         </div>
+
+           <div class="col-lg-4 col-sm-6 col-12  space-img">
+           <img src="image/05.jpg" class="img-fluid">
+           <div class="overlap">
+            <div>
+             <h4 class="fw-bold">POKER GAMES</h4>
+             <h5 class="pb-3">$2365.96</h5>
+              <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+           </div>
+         </div>
+
+           <div class="col-lg-4 col-sm-6 col-12 space-img">
+           <img src="image/06 (1).jpg" class="img-fluid">
+           <div class="overlap">
+            <div>
+             <h4 class="fw-bold">POKER GAMES</h4>
+             <h5 class="pb-3">$2365.96</h5>
+              <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+<!-- control -->
+<section class="control">
+  <div class="container">
+    <div class="row text-center">
+     <h1> BE IN CONTROL</h1>
+<p>At Modeltheme, we show only the best websites and portfolios built completely with <br>passion, simplicity and creativity !</p>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-lg-6 col-12 ">
+        <div class="bg-dark control-detail">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image/04.png">
+        </div>
+        <div class="col-md-8 control-info">
+          <h4>PAYMENT LIMITATION</h4>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound</p>
+        </div>
+      </div>
+      </div></div>
+
+            <div class="col-lg-6 col-12 ">
+        <div class="bg-dark control-detail">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image/05.png">
+        </div>
+        <div class="col-md-8 control-info">
+          <h4>GREAT SOLUTIONS</h4>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound</p>
+        </div>
+      </div>
+      </div></div>
+
+
+            <div class="col-lg-6 col-12">
+        <div class="bg-dark control-detail">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image/06.png">
+        </div>
+        <div class="col-md-8 control-info">
+          <h4>SUPPORT IN PERSON</h4>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound</p>
+        </div>
+      </div>
+      </div></div>
+
+      
+            <div class="col-lg-6 col-12 ">
+        <div class="bg-dark control-detail">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="image/07.png">
+        </div>
+        <div class="col-md-8 control-info">
+          <h4>PAYMENT LIMITATION</h4>
+<p>Holisticly underwhe fully researched <br>deliverables for revoluonary sourcess<br> skills and technically sound</p>
+        </div>
+      </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- tabs -->
+
+<section class="tablet">
+
+  <div class="container">
+    <div class="row col-12 m-auto text-center">
+
+      <h1>RELATED OTHER GAMES</h1>
+    </div>
+ 
+
+<ul class="nav nav-pills py-5 justify-content-center  mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">ALL</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-slotes-tab" data-bs-toggle="pill" data-bs-target="#pills-slotes" type="button" role="tab" aria-controls="pills-slotes" aria-selected="false">SLOTES</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-roulette-tab" data-bs-toggle="pill" data-bs-target="#pills-roulette" type="button" role="tab" aria-controls="pills-roulette" aria-selected="false">ROULETTE</button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-black jack-tab" data-bs-toggle="pill" data-bs-target="#pills-black jack" type="button" role="tab" aria-controls="pills-black jack" aria-selected="false">BLACK JACK</button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-poker games-tab" data-bs-toggle="pill" data-bs-target="#pills-poker games" type="button" role="tab" aria-controls="pills-poker games" aria-selected="false">POKER GAMES</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <section class="wrapper-tabs">
+      <div class="container">
+        
+   
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/01 (2).jpg" class="img-fluid">
+        <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="col-lg-6 col-12 wrapper">
+        <img src="image/02 (2).jpg" class="img-fluid">
+           <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/03 (2).jpg" class="img-fluid">
+           <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/04 (2).jpg" class="img-fluid">
+           <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   </div>
+    </section>
+  </div>
+
+
+
+
+  <div class="tab-pane fade" id="pills-slotes" role="tabpanel" aria-labelledby="pills-slotes-tab">
+    
+
+      <section class="wrapper-tabs">
+      <div class="container">
+        
+   
+    <div class="row g-4">
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/01 (2).jpg" class="img-fluid">
+        <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   </div>
+    </section>
+  </div>
+
+
+
+
+  <div class="tab-pane fade" id="pills-roulette" role="tabpanel" aria-labelledby="pills-roulette-tab">
+      <section class="wrapper-tabs">
+      <div class="container">
+        
+   
+    <div class="row g-4">
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/02 (2).jpg" class="img-fluid">
+        <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   </div>
+    </section></div>
+
+    <div class="tab-pane fade" id="pills-black jack" role="tabpanel" aria-labelledby="pills-black-tab">
+      <section class="wrapper-tabs">
+      <div class="container">
+        
+   
+    <div class="row g-4">
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/03 (2).jpg" class="img-fluid">
+        <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   </div>
+    </section></div>
+
+
+    <div class="tab-pane fade" id="pills-poker games" role="tabpanel" aria-labelledby="pills-poker games-tab">
+      <section class="wrapper-tabs">
+      <div class="container">
+        
+   
+    <div class="row g-4">
+      <div class="col-lg-6 col-12 wrapper">
+        <img src="image/04 (2).jpg" class="img-fluid">
+        <div class="wrapper-text">
+          <div class="row">
+            <div class="col-md-8">
+              <h4>FREE POKER GAMES</h4>
+<h5>Catagory: Roulette</h5>
+            </div>
+
+            <div class="col-md-4">
+                 <button type="button" class="btn  btn-join  text-start" >PLAY NOW <i class='bx bx-chevron-right'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+   </div>
+    </section></div>
+</div>
+
+<div class="row">
+   <div class="col-md-4 m-auto text-center ">
+                 <button type="button" class="btn  btn-join tab-btn text-start" >BROWSE ALL MATCHES <i class='bx bx-chevron-right'></i></button>
+            </div>
+</div>
+</div>
+</section>
+
+<!-- question -->
+
+
+<section class="question">
+  <div class="container">
+    <div class="row justify-content-center reverse">
+      <div class="col-lg-6 col-12">
+        <h1>FREQUENTLY ASK QUESTION</h1>
+   <p>At Modeltheme we show only the best websites and portfolios built completely with passion simplicity and creativity !</p>
+
+   <div class="question-info">
+     <div class="accordion  " id="accordionExample">
+  <div class="accordion-item  mb-3 bg-dark text-white">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button bg-dark  text-white " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+<h3>01. HOW DO I CREATE CASINE ACCOUNT ?</h3>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body fs-5">
+<p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items. </p>     </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-3 bg-dark text-white">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed  bg-dark outline-none  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+     
+<h3>02. WHERE CAN I REDEEM MY EARNINGS ?</h3>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+     <p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item mb-3 bg-dark text-white">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed  bg-dark outline-none  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        
+<h3>03. HOW DO I START PLAYING ?</h3>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+    <p>Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="accordion-item mb-3 bg-dark text-white">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed  bg-dark  text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        
+
+<h3>04. HOW DO I MOVE UP A LEVEL ?</h3>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p> Competen diseminate mpactful proceses with client centered Holistic maximize multimedia based supply chains for resourc channels e-leveling action items.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+   </div>
+      </div>
+
+      <div class="col-lg-6 col-12">
+        <img src="image/01 (1).png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- joker -->
+
+<section class="joker">
+  <div class="container-fluid">
+    <div class="row justify-content-center g-4 align-items-center">
+      <div class="col-lg-6 col-12 d-flex justify-content-start">
+        <img src="image/08.png" class="">
+      </div>
+        <div class="col-lg-6 col-12 space">
+         <h1> UNLOCK FREE SPIN</h1>
+<p>Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then ussertively communcate an expanded array of mindshare rather think wiverse technologies for magnetic applications eamlessly virtual that conveniently monetize synergistic human capital</p>
+  <button type="button" class="btn  btn-join  text-start" >BROWSE ALL MATCHES <i class='bx bx-chevron-right'></i></button>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="reviews">
+  <div class="container">
+    <div class="row text-center">
+      <h1>OUR GAMERS REVIEWS</h1>
+  <p class="reviews-p">At Modeltheme, we show only the best websites and portfolios built completely with<br> passion simplicity and creativity !</p>
+    </div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+  
+    <div class="row justify-content-center g-4 py-4">
+      <div class="col-lg-6 col-12">
+<div class="gray rounded-3 p-3 bg-dark">
+        <div class="row ">
+          <div class="col-md-2">
+            <img src="image/test1.jpg">
+          </div>
+           <div class="col-md-4">
+             <h4>OLIVER WIDOWS</h4>
+             <P>UI DESIGNER</P>
+           </div>
+            <div class="col-md-6 ">
+              <i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i> <span class="purple">5.28</span>
+
+            </div>
+            <div class="reviews-info">
+              <hr class="text-white">
+              <p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity</p>
+             </div>
+        </div>
+      </div>
+    </div>
+           <div class="col-lg-6 col-12">
+             <div class="gray rounded-3 p-3 bg-dark">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="image/01 (3).jpg">
+          </div>
+           <div class="col-md-4">
+             <h4>OLIVER WIDOWS</h4>
+             <P>UI DESIGNER</P>
+           </div>
+            <div class="col-md-6">
+              <i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i> <span class="purple">5.28</span>
+
+            </div>
+            <div class="reviews-info">
+              <hr class="text-white">
+              <p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity</p>
+             </div>
+        </div>
+      </div>
+           </div>
+    </div>
+ 
+    </div>
+    <div class="carousel-item">
+
+
+    <div class="row justify-content-center  g-4 py-4">
+      <div class="col-lg-6 col-12">
+<div class="gray rounded-3 p-3 bg-dark">
+        <div class="row ">
+          <div class="col-md-2">
+            <img src="image/01 (3).jpg">
+          </div>
+           <div class="col-md-4">
+             <h4>OLIVER WIDOWS</h4>
+             <P>UI DESIGNER</P>
+           </div>
+            <div class="col-md-6">
+              <i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i> <span class="purple">5.28</span>
+
+            </div>
+            <div class="reviews-info">
+              <hr class="text-white">
+              <p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity</p>
+             </div>
+        </div>
+      </div>
+    </div>
+           <div class="col-lg-6 col-12">
+             <div class="gray rounded-3 p-3 bg-dark">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="image/test1.jpg">
+          </div>
+           <div class="col-md-4">
+             <h4>OLIVER WIDOWS</h4>
+             <P>UI DESIGNER</P>
+           </div>
+            <div class="col-md-6">
+              <i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i> <span class="purple">5.28</span>
+
+            </div>
+            <div class="reviews-info">
+              <hr class="text-white">
+              <p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity</p>
+             </div>
+        </div>
+      </div>
+           </div>
+    </div>
+
+    </div>
+    <div class="carousel-item">
+    
+    <div class="row g-4 justify-content-center  py-4">
+      <div class="col-lg-6 col-12">
+<div class="gray rounded-3 p-3 bg-dark">
+        <div class="row ">
+          <div class="col-md-2">
+            <img src="image/test1.jpg">
+          </div>
+           <div class="col-md-4">
+             <h4>OLIVER WIDOWS</h4>
+             <P>UI DESIGNER</P>
+           </div>
+            <div class="col-md-6">
+              <i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i> <span class="purple">5.28</span>
+
+            </div>
+            <div class="reviews-info">
+              <hr class="text-white">
+              <p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity</p>
+             </div>
+        </div>
+      </div>
+    </div>
+           <div class="col-lg-6 col-12">
+             <div class="gray rounded-3 p-3 bg-dark">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="image/01 (3).jpg">
+          </div>
+           <div class="col-md-4">
+             <h4>OLIVER WIDOWS</h4>
+             <P>UI DESIGNER</P>
+           </div>
+            <div class="col-md-6">
+              <i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i> <span class="purple">5.28</span>
+
+            </div>
+            <div class="reviews-info">
+              <hr class="text-white">
+              <p>At Modeltheme, we show only the best websites and portfolios built completely with passion simplicity and creativity</p>
+             </div>
+        </div>
+      </div>
+           </div>
+    </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-12 pt-3 news-h1">
+        <h1>SUBSCRIBE FOR NEWSLETTER</h1>
+      </div>
+      <div class="col-lg-7 news-input col-12">
+        <div class="input-group  mb-3">
+
+  <input type="text" class="form-control p-3 fs-5  text-dark" placeholder=" Enter Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn fs-5 " type="button" id="button-addon2">SUBSCRIBE NOW</button>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-sm-6 col-12">
+        <img src="image/logo.png">
+        <p class="py-4 fs-5">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
+        <div class="soci ">
+  <img src="image/social-1.png">
+  <img src="image/social-2.png">
+  <img src="image/social-3.png">
+</div>
+      </div>
+        <div class="col-lg-4 col-sm-6 col-12">
+          <h3 class="mb-4">TOP JACKPOT GAMES</h3>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <img src="image/01 (4).jpg">
+              
+            </div>
+               <div class="col-md-6">
+                 <h5>FREE POKER GAME</h5>
+              <p>Poker: $230</p>
+            <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+               </div>
+          </div>
+
+           <div class="row  mb-3">
+            <div class="col-md-4">
+              <img src="image/03 (3).jpg">
+              
+            </div>
+               <div class="col-md-6">
+                 <h5>FREE POKER GAME</h5>
+              <p>Poker: $230</p>
+             <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+               </div>
+          </div>
+
+           <div class="row  mb-3">
+            <div class="col-md-4">
+              <img src="image/02 (3).jpg">
+              
+            </div>
+               <div class="col-md-6">
+                 <h5>FREE POKER GAME</h5>
+              <p>Poker: $230</p>
+            <i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i>
+               </div>
+          </div>
+        </div>
+          <div class="col-lg-4 col-sm-6 col-12">
+            <h3 class="mb-5">RECENTS POSTS</h3>
+          <div class="row  mb-3 ">
+            <div class="col-md-4">
+              <img src="image/01 (6).jpg">
+              
+            </div>
+               <div class="col-md-6">
+                 <h5>FREE POKER GAME</h5>
+              <p>Poker: $230</p>
+              
+               </div>
+          </div>
+
+           <div class="row">
+            <div class="col-md-4">
+              <img src="image/02 (4).jpg">
+              
+            </div>
+               <div class="col-md-6">
+                 <h5>FREE POKER GAME</h5>
+              <p>Poker: $230</p>
+            
+               </div>
+          </div>
+
+        
+          </div>
+    </div>
+
+  </div>
+   <hr>
+
+   <div class="copyright d-flex container">
+    <p class="m-auto text-center" >©2022 Jackpoo - All Rights Reserved. Developed by LabArtisan  </p> 
+
+
+<div class="offi fixed-bottom ">
+    <span class="bg-none outline-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">  <img src="image/download.png"></span>
+
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header bg-white  shadow p-3 mb-5 bg-body rounded">
+    <h5 id="offcanvasRightLabel"> <i class='bx bx-dots-horizontal-rounded text-dark fw-bold' ></i>
+       </h5>
+        <h4 class="text-dark">Welcome to LiveChat</h4>
+    <span class=" text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class='bx bx-minus text-dark fw-bold' ></i>
+    </span>
+  </div>
+  <div class="offcanvas-body ">
+    <div class="bg-white  content shadow px-4 pb-4 pt-5 mb-5 bg-body rounded">
+      <i class='bx bxs-user-circle fs-1 text-primary' ></i>
+     <p class="lead fs-5 text-dark"> Welcome to Sales Chat! Please fill in the form below before starting the chat.</p>
+<h5 class="text-dark">Name:</h5>
+   <input type="name" class="form-control mb-3" id="inputPassword">
+
+<h5 class="text-dark">E-mail:</h5>
+   <input type="name" class="form-control" id="inputPassword">
+
+   <button type="button" class="btn btn-primary d-flex px-5 fs-5 mt-3 m-auto text-center">Start the chat</button>
+  </div>
+
+  
+  </div>
+     <small class="live-chat text-dark">Powered by  <i class='bx bx-message px-2 text-primary ' ></i>  <b> LiveChat</b> </small>
+</div>
+</div>
+     <a href="#top"><i class='bx bx-chevron-up ms-auto fixed-bottom chev' ></i></a>
+
+
+    </div>
+</section>
+
+</header>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+
